@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formluario</title>
+</head>
+<body>
+    <header>
+        Que tanto conoces a Kanye West
+    </header>
+    <nav>
+        <h1>BARRA DE NAVEGACIÓN</h1>
+    </nav>
+    <section>
+        <h2>Contesta lo siguiente</h2>
+        <form action="procesar.html" target="_blank" method="get" > 
+            <label for="nombre">NOMBRE</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe solo letras" pattern="[A-Za-z\s]+"> <br> 
+            <label for="apellido">APELLIDO</label><br>
+            <input type="text" id="apellido" name="apllido" placeholder="Escribe solo letras" pattern="[A-Za-z\s]+" > <br><br>
+            <label for="numerodecontrol">Numero de control</label><br>
+            <input type="number" id="NDC" name="NDC" placeholder="Solo numeros">
+
+             <br><br>
+            <hr>
+
+            <label for="">Como clasificarias a Kanye West</label><br>
+            <input type="checkbox" name="P" id="P"> <label for="P">Polemico</label> &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="D" id="D"> <label for="D">Desagradable</label> &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="B" id="B"> <label for="B">Buen artista</label> &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="in" id="in"> <label for="in">Inspirador</label> &nbsp;&nbsp;&nbsp;
+
+            <hr> 
+            <label for="">Mejor album</label><br>
+            <input type="radio" name="carr" id="LR" value="lateregistration"> <label for="LR">Late Registration</label> &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="carr" id="MBDTF"> <label for="MBDTF" value="My beautiful">My beautiful Twisted Dark Fantasy</label> &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="carr" id="TLOF"> <label for="TLOF" value="The Life">The Life Of Pablo</label> &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="carr" id="GD"> <label for="GD" value="Graduation">Graduation</label> &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="carr" id="NO"> <label for="NO" value="NO">No</label> &nbsp;&nbsp;&nbsp;
+            <hr>
+
+            <label for="">Cuando publico su primer album?</label><br>
+            <input type="radio" name="7" id="7"> <label for="7">2007</label> &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="10" id="10"> <label for="10">2010</label> &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="4" id="4"> <label for="4">2004</label> &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="2" id="2"> <label for="2">2002</label> &nbsp;&nbsp;&nbsp;
+            <hr>
+
+            <label for="audio">Sube una cancion de KY</label><br>
+            <input type="file" name="audio" id="audio">
+
+            <br>
+            <hr>
+            <label for="numeros">Cuando ocurrio la polemica con Taylor Swift</label><br>
+            <select name="numeros" id="numeros">
+                <option value="0">Selecciona una opcion</option>
+                <option value="2001">2001</option>
+                <option value="2012">2012</option>
+                <option value="2009">2009</option>
+                <option value="2000">2000</option>
+                <option value="2010">2010</option>
+            </select>
+            <br><br>
+            <hr>
+            <label for="com">Con que empresa colaboro KY para sacar una nueva marca de tenis</label><br>
+            <textarea name="com" id="com"></textarea>
+            <br><br>
+            <hr>
+
+            <label for="fn">Cuando salio el ultimo album completo de KY</label><br>
+
+            <input type="date" name="fn" id="fn"><br><br>
+
+            <label for="color">De que color es la portada del album My Beautiful Dark Twisted Fantasy</label><br>
+            <input type="color" name="color" id="color"><br><br>
+
+            <label for="num">Que edad tiene aproximadamente KY</label><br>
+            <input type="number" name="num" id="num" min="0" max="100" step="10" value="50">
+
+             <br><br>
+             <label for="cn">Ahora mismo en que hora estas realizando este formulario?</label><br>
+             <input type="time" name="tm" id="tm" value="" min="00:00" max="24:00">
+            <hr>
+            <button type="reset">LIMPIAR</button>&nbsp;&nbsp;&nbsp;
+            <button type="button">PROCESAR</button>&nbsp;&nbsp;&nbsp;
+            <button type="submit">ENVIAR</button>&nbsp;&nbsp;&nbsp;
+            <hr>
+        </form>
+    </section>
+</body>
+</html>
